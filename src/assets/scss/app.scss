@@ -225,3 +225,38 @@
     padding-right: 0;
   }
 }
+
+
+.section-home-content {
+  padding-top: 80px;
+  background: #F7F8F9;
+
+  .home-content-tip {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #01264A;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 5px;
+      height: 22px;
+    }
+  }
+
+  .accordion-header {
+    button {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 300;
+      color: #4AC97D;
+    }
+
+  }
+}

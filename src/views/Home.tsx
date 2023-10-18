@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import HomeNavbar from "../components/Navbars/HomeNavbar";
 import HomeHeader from "../components/Headers/HomeHeader";
+import HomeContent from "./home-sctions/HomeContent";
 
 function Home() {
 
@@ -21,6 +22,7 @@ function Home() {
             <HomeNavbar />
             <div className="wrapper">
                 <HomeHeader />
+                <HomeContent />
             </div>
         </>
     )

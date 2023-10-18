@@ -51,7 +51,7 @@ function HomeNavbar() {
                     }}
                 />
             ) : null}
-            <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
+            <Navbar className={"fixed-top " + navbarColor} expand="lg">
                 <Container className="d-flex justify-content-between align-items-center home-nav-container">
                     <div className="navbar-translate">
                         <NavbarBrand
