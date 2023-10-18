@@ -570,3 +570,126 @@
   text-align: center;
   color: white;
 }
+
+.section-land {
+  height: 100vh;
+  padding: 0;
+
+  .container {
+    padding: 0;
+  }
+
+  .row {
+    height: 100%;
+
+    > div:first-child {
+      background: #01264A;
+      padding-top: 126px;
+
+    }
+
+    > div:last-child {
+      background: #fff;
+      padding-top: 126px;
+    }
+  }
+
+  .left-container {
+    width: 100%;
+    float: right;
+
+    @media (min-width: 576px) {
+      width: calc(258px - 8vw);
+    }
+
+    @media (min-width: 768px) {
+      width: calc(348px - 8vw);
+    }
+
+    @media (min-width: 992px) {
+      width: calc(468px - 8vw);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc(558px - 8vw);
+    }
+
+    @media (min-width: 1400px) {
+      width: calc(648px - 8vw);
+    }
+
+    @media (min-width: 1513px) {
+      width: calc(667px - 8vw);
+    }
+  }
+
+  .right-container {
+    width: 100%;
+
+    @media (min-width: 576px) {
+      width: calc(258px + 8vw);
+    }
+
+    @media (min-width: 768px) {
+      width: calc(348px + 8vw);
+    }
+
+    @media (min-width: 992px) {
+      width: calc(468px + 8vw);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc(558px + 8vw);
+    }
+
+    @media (min-width: 1400px) {
+      width: calc(648px + 8vw);
+    }
+
+    @media (min-width: 1513px) {
+      width: calc(667px + 8vw);
+    }
+  }
+
+  .left-container {
+    .title-container {
+      p {
+        margin-bottom: 0;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+      }
+    }
+    .middle-text {
+      margin-top: 40px;
+      margin-bottom: 60px;
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 300;
+      color: #fff;
+      line-height: 54px;
+    }
+  }
+}
+
+.common-nav-container {
+  padding: 0;
+  .home-lang-select {
+    p {
+      font-size: 16px;
+      color: #01264A;
+    }
+  }
+
+  .dropdown-toggle::after {
+    color: #01264A;
+  }
+
+  .btn-outline-dark {
+    border: 1px solid #01264A;
+    color: #01264A;
+    font-size: 16px;
+  }
+}

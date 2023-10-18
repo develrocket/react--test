@@ -8,12 +8,14 @@ import "./assets/demo/nucleo-icons-page-styles.css";
 import "./assets/scss/app.scss";
 
 import Home from "./views/Home";
+import Register from "./views/Register";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/register" element={<Register />} />
 
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
