@@ -9,6 +9,7 @@ import "./assets/scss/app.scss";
 
 import Home from "./views/Home";
 import Register from "./views/Register";
+import RegisterStep from "./views/RegisterStep";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/register-step" element={<RegisterStep />} />
 
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>

@@ -1,0 +1,119 @@
+
+// FONT
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
+
+// CONFIG
+$SPACER_XS: 0.5rem;
+$SPACER_SM: 0.75rem;
+$SPACER: 1rem;
+$SPACER_MD: 1.5rem;
+$SPACER_LG: 2rem;
+$BORDER_RADIUS: 3px;
+$PROGRESS_HEIGHT: 600px;
+$PROGRESS_LIST_HEIGHT: 75px;
+$PROGRESS_COUNTER_WIDTH: 18px;
+$LIST_ITEM_WIDTH: 100px;
+$PROGRESS_BG: #392A60;
+$BODY_BG: #2E1F47;
+$ICON_COLOR: #F3597D;
+
+
+
+// THE GOOD STUFF
+.progressContainer {
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: $SPACER_LG;
+  color: #fff;
+  background: $PROGRESS_BG;
+  @include box-shadow(0 0 15px rgba(0, 0, 0, 0.3));
+}
+
+.progress-step {
+  position: relative;
+  padding: 0 $SPACER 0 3.5rem;
+  margin: $SPACER_LG 0 0;
+  list-style: none;
+}
+
+.progress__title {
+  padding: 0.4rem 0 $SPACER_XS;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.progress__info {
+  font-size: 13px;
+}
+
+.progress__item {
+  position: relative;
+  min-height: $PROGRESS_LIST_HEIGHT;
+  counter-increment: list;
+  padding-left: 0;
+  color: #D2D2D2;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -1.7rem;
+    top: 28px;
+    height: 70%;
+    width: 1px;
+    border-left: 1px dashed #fff;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -35px;
+    width: $PROGRESS_COUNTER_WIDTH;
+    height: $PROGRESS_COUNTER_WIDTH;
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2rem;
+    text-align: center;
+    border: 1px solid #fff;
+  }
+  //Hide border for Last Step
+  &:last-child {
+    &:before {
+      border: none;
+    }
+  }
+  //Completed
+  &.progress__item--completed {
+    color: #fff;
+    .progress__title {
+      font-weight: 700;
+    }
+    &:before {
+      border-left: 1px solid #fff;
+    }
+    &:after {
+      content: " ";
+      font-weight: 400;
+      background: #fff;
+      color: $PROGRESS_BG;
+    }
+  }
+  //Active
+  &.progress__item--active {
+    color: #fff;
+    .progress__title {
+      font-weight: 700;
+    }
+    &:after {
+      background: #fff;
+      color: $PROGRESS_BG;
+    }
+  }
+}
+
+
