@@ -1,0 +1,227 @@
+@media (min-width: 1513px) {
+  .container {
+    max-width: 1358px;
+  }
+}
+
+.home-lang-select {
+  p {
+    font-size: 16px;
+  }
+}
+
+.navbar-nav {
+  li {
+    margin: auto;
+  }
+}
+
+.btn-outline-light {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.home-nav-container {
+  .btn-outline-light {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.page-header {
+  .content-center {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .home-header-left {
+    .home-title {
+      font-size: 64px;
+      text-align: left;
+      margin-top: 42px;
+
+      p {
+        margin-bottom: 0;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 107.023%;
+
+        &:first-child {
+          color: #4AC97D;
+        }
+      }
+    }
+
+    .left-info-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 42px;
+
+      div:first-child {
+        border-left: 6px solid #D9D9D9;
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: left;
+        padding-left: 16px;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      div:last-child {
+        display: flex;
+
+        div.info-item {
+          border-radius: 22px;
+          background: #080F1A;
+          padding: 0;
+          width: 90px;
+          height: 89px;
+          border: none;
+          display: block;
+          margin-left: 8px;
+
+
+          p:first-child {
+            color: #FFF;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-bottom: 0;
+            margin-top: 5px;
+          }
+
+          p:last-child {
+            color: #A5DEFF;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .left-desc-container {
+      margin-top: 54px;
+      div {
+        display: flex;
+        align-items: center;
+        height: 47px;
+
+        img {
+          width: 27px;
+          margin-right: 8px;
+        }
+
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .header-form-container {
+    background: white;
+    border-radius: 30px;
+    padding: 39px 57px;
+    text-align: left;
+
+    .top-link {
+      color: #4AC97D;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 33px;
+        margin-right: 15px;
+      }
+    }
+
+    .form-title {
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      color: #01264A;
+      margin-bottom: 19px;
+      margin-top: 7px;
+    }
+
+    .form-input-group {
+      .row {
+        margin-bottom: 26px;
+
+        input {
+          border: none;
+          border-radius: 14px;
+          background: #F3F3F3;
+          font-size: 24px;
+          font-style: italic;
+          font-weight: 300;
+          line-height: normal;
+          padding-left: 25px;
+          height: 58px;
+        }
+
+        &.check-container {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          color: #01264A;
+
+          div {
+            display: flex;
+            align-items: center;
+            padding-left: 36px;
+
+            label {
+              margin-bottom: 0;
+              margin-top: 6px;
+            }
+          }
+        }
+
+        .btn-submit {
+          border-radius: 14px;
+          background: #4AC97D;
+          height: 58px;
+          color: #FFF;
+
+          text-align: center;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  .home-header-right {
+    padding-right: 0;
+  }
+}
