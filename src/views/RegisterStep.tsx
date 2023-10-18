@@ -26,12 +26,14 @@ function RegisterStep() {
 
     const next = () => {
         if (animating) return;
+        if (activeIndex == items.length - 1) return;
         const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
         setActiveIndex(nextIndex);
     };
 
     const previous = () => {
         if (animating) return;
+        if (activeIndex == 0) return;
         const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
         setActiveIndex(nextIndex);
     };
