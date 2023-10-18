@@ -90,12 +90,12 @@ function HomeNavbar() {
                                     onClick={(e) => e.preventDefault()}
                                     className="d-flex align-items-center home-lang-select"
                                 >
-                                    <img src={USFlag} className="design_app mr-2" />
+                                    <img src={USFlag} className="design_app mr-2" style={{marginRight: '5px'}}/>
                                     <p>English</p>
                                 </DropdownToggle>
                                 <DropdownMenu>
                                     <DropdownItem to="/index" tag={Link}>
-                                        <img src={USFlag} className="design_app mr-2" />
+                                        <img src={USFlag} className="design_app mr-2" style={{marginRight: '5px'}}/>
                                         <p>English</p>
                                     </DropdownItem>
                                 </DropdownMenu>

@@ -2,6 +2,9 @@ import React, {useEffect} from "react";
 import HomeNavbar from "../components/Navbars/HomeNavbar";
 import HomeHeader from "../components/Headers/HomeHeader";
 import HomeContent from "./home-sctions/HomeContent";
+import HomeReviews from "./home-sctions/HomeReviews";
+import HomeFooter from "../components/Footer/HomeFooter";
+import HomeCopyright from "../components/Footer/HomeCopyright";
 
 function Home() {
 
@@ -23,6 +26,9 @@ function Home() {
             <div className="wrapper">
                 <HomeHeader />
                 <HomeContent />
+                <HomeReviews />
+                <HomeFooter />
+                <HomeCopyright />
             </div>
         </>
     )
